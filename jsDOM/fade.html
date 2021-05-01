@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade in-Fade out</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .fadeTextLine{
+            transition: opacity 1s;
+        }
+        .fadeInButton ,.fadeOutButton{
+            height:50px;
+            width:100px;
+            margin-top:100px;
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <button id="fadeIn" class="fadeInButton" onclick="handleFade(1)">FADE IN</button>
+    <button id="fadeOut" class="fadeOutButton" onclick="handleFade(0)">FADE OUT</button>
+    <h1 id="fadeText" class="fadeTextLine">The next time if you don't see me, I might have faded!</h1>
+    <script>
+        function handleFade(opacityValue){
+            var element=document.getElementById("fadeText");
+            if(opacityValue===1){
+                element.style.opacity=1;
+            }
+            else{
+                element.style.opacity=0;
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+  		<meta charset="utf-8">
+ 	 	<title>forms and input tags</title>
+	</head>
+
+	<body>
+		
+
+        
+        <h2>Personal Details</h2>
+
+
+
+        <form method="POST" action="/sent">
+            <!-- method and action will make more sense when dealing with backend-->
+            
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Name" >
+                        <br>
+                        <input type="text" value="GECT">
+                        <br>
+                        <input type="number" placeholder="Age">
+                        <br>
+                    </td>   
+
+                </tr>
+
+                <!-- just some space -->
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="name">Name : </label>
+                        <input type="text" placeholder="Name" id="name" >
+                        <br>
+                        <label for="name">College : </label>
+                        <input type="text" value="GECT">
+                        <br>
+                        <label for="name">Age : </label>
+                        <input type="number" placeholder="Age">
+                        <br>
+                        <label for="birthday">Birthday : </label>
+                        <input type="date" id="birthday" name="birthday">
+                        <br>
+                        <br>
+                        <label for="image">Image : </label>
+                        <input type="file" id="image" name="image">
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div><strong>Gender</strong></div>
+                        <label for="male">Male : </label>
+                        <input type="radio" id="male" >
+                        <br>
+                        <label for="female">Female : </label>
+                        <input type="radio" id="female">
+                        <br>
+                        <label for="trans">Trans : </label>
+                        <input type="radio" id="trans">
+                        <br>
+                        <label for="other">Prefer not to say : </label>
+                        <input type="radio" id="other">
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+
+                
+        <br/><br/><br/><br/><br/><br/><br/>
+
+       
+
+
+
+        <h2>Review</h2>
+
+
+        <form method="POST" action="/sent">
+
+            <div>
+                <strong>Mentors :</strong>
+                <div>
+                    <input type="text" value="Abil" disabled>
+                    <input type="text" value="Gokul" disabled>
+                </div>
+            </div>
+            
+            <br>
+
+            <div>
+                <strong>Overall Workshop Experience</strong>
+                <div>
+                    <label for="wow1">Wow, Incredible </label>
+                    <input type="radio" id="wow1" name="experience" checked>
+                    <br>
+                    <label for="wow2">Couldn't be better </label>
+                    <input type="radio" id="wow2" name="experience">
+                    <br>
+                    <label for="wow3">You guys are the best </label>
+                    <input type="radio" id="wow3" name="experience">
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <strong>Positives Features</strong>
+                <div>
+                    <label for="positive1"> Interesting Workshop </label>
+                    <input type="checkbox" id="positive1" checked>
+                    <br>
+                    <label for="positive2">  Understood Everything </label>
+                    <input type="checkbox" id="positive2">
+                    <br>
+                    <label for="positive3"> Had loads of fun </label>
+                    <input type="checkbox" id="positive3">
+                    <br>
+                </div>
+            </div>
+            <!-- Identify differences between radio and checkbox types -->
+
+
+            <br>
+
+            <div>
+                <label for="rating">Worshop Rating : </label>
+                <select name="rating" id="rating">
+                    <option value="10" >10</option>
+                    <option value="10" >10</option>
+                    <option value="10" >10</option>
+                </select>
+            </div>
+
+
+            <br>
+
+
+            <label for="review"> Review </label>
+            <br>
+            <textarea name="review" id="review" cols="30" rows="10" placeholder="feel free"></textarea>
+
+            <br><br>
+
+            <div>
+                <input type="submit" value="LETS GO" >
+            </div>
+
+        </form>
+
+
+	</body>
+	
+</html>
+
+
+
+<!-- Attributes like name and value will prove much more useful when learning backend -->
+<!-- More Input types : https://www.w3schools.com/html/html_form_input_types.asp -->
+<!-- More Form Elements : https://www.w3schools.com/html/html_form_elements.asp -->
+<!-- MOre Input Attributes : https://www.w3schools.com/html/html_form_attributes.asp -->

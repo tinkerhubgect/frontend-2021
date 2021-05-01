@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The setTimeout function</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .changeButton{
+            height:50px;
+            background-color: black;
+            color: white;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1 id="demoText">I WILL TURN RED 3 SECONDS AFTER YOU CLICK THE BUTTON</h1>
+    <button class="changeButton" onclick="handleClick()" >CHANGE COLOUR OF TEXT</button>
+    <script>
+        function handleClick()
+       { 
+           var element=document.getElementById("demoText");
+            /*The setTimeout function executes a block of 
+            code(a function) after a given time interval*/
+            setTimeout(function(){
+                element.style.color="red";
+            },3000);
+
+        }
+    </script>
+
+</body>
+</html>
