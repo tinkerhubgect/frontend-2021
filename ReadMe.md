@@ -30,9 +30,9 @@
     * border
     * pseudo selectors
     * transform and translate ?
-4. px, em, vh-vw, %
-5. rgba, hex
-6. absolute and relative
+4. css units
+5. css colors 
+6. css position property
 7. grid and flexbox   
 8. Animation , keyframes
 9. @media
