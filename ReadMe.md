@@ -1,25 +1,25 @@
-# TINKERHUB GECT 
-## WEB DEVELOPEMENT BASICS(SYLLABUS)
+# TINKERHUB GECT
+
+## Web Development Basics (Syllabus)
+
 ### HTML
 
-1.  Boilerplate
-2.  Tags
-    * html, head, meta, body
-    * h1-h6, p, strong, i
-    * a
-    * div and span
-    * button
-    * img
-    * table
-    * ul, ol
-    * form and input
-    * link and script
-    * iframe
-3. id and class
-
+1. Boilerplate
+2. Tags
+    * `html`, `head`, `meta`, `body`
+    * `h1` to `h6`, `p`, `strong`, `i`
+    * `a`
+    * `div`, `span`
+    * `button`
+    * `img`
+    * `table`
+    * `ul`, `ol`
+    * `form`, `input`
+    * `link`, `script`
+    * `iframe`
+3. ID and Class
 
 ### CSS
-
 1. inline styling <class>
 2. separate css file (linking in header)
 3. basic styling properties
@@ -48,4 +48,5 @@
 4. events : click, hover
 5. hide, show, fade 
 6. setInterval, setTimeout
+
 
