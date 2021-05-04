@@ -19,35 +19,34 @@
     * `iframe`
 3. ID and Class
 
-
 ### CSS
+1. inline styling <class>
+2. separate css file (linking in header)
+3. basic styling properties
+    * height, weight
+    * color, background
+    * font, align
+    * padding and margin
+    * border
+    * pseudo selectors
+    * transform and translate ?
+4. css units
+5. css colors 
+6. css position property
+7. grid and flexbox   
+8. Animation , keyframes
+9. @media
+10. multiple css selectors, > , . , nth-child etc
+11. cdn
 
-1. Inline Styling
-2. External Style Sheets
-3. Basic Styling
-    * `height`, `weight`
-    * `color`, `background`
-    * `font`, `align`
-    * `padding`, `margin`
-    * `border`
-    * Pseudo-Selectors
-    * `transform`, `translate`
-4. `px`, `em`, `vh-vw`, `%`
-5. RGBA or Hex?
-6. Absolute and Relative
-7. Grid and Flexbox
-8. Animations
-9. `@media`
-10. Advanced CSS (Multiple Selectors, Nth-child, etc.)
-11. CDN
 
+### JS
 
-### JavaScript
+1. basics
+2. alert, prompt
+3. selectors
+4. events : click, hover
+5. hide, show, fade 
+6. setInterval, setTimeout
 
-1. Basics
-2. Alerts and Prompts!
-3. Selectors
-4. Events
-5. Hide, Show and Fade 
-6. Waiting...
 

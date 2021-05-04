@@ -1,0 +1,12 @@
+div{  /*biniding an element to the animation keyframe*/
+   width: 100px;
+   height: 100px;
+   background-color: red;
+   animation-name: div;  /*using the  name of  the key frame for animation*/
+   animation-duration: 2s;
+}
+
+@keyframes div { /*naming the key frame and specifying the animation sequence*/
+  from {background-color: red;}  /*color change of div from red to yellow*/
+  to {background-color: yellow;}
+}
