@@ -36,6 +36,7 @@
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
   grid-template-rows: 1fr, 1fr;
+  /* Adding a "." in a space creates an empty space  */
   grid-template-areas:
     "b1 b3 b3"
     "b4 b4 b2";
