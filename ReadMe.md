@@ -31,7 +31,7 @@
     * `border`
     * Pseudo-Selectors
     * `transform`, `translate`
-4. `px`, `em`, `vh-vw`, `%`
+4. Sizes and Units
 5. RGBA or Hex?
 6. Absolute and Relative
 7. Grid and Flexbox
