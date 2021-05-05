@@ -17,12 +17,13 @@
   padding-left: 50px;
 
   background-color: rgb(54, 53, 53);
+  transition: background-color 1s;
 }
 
 h2 {
   /* You can import fonts by either downloading or by using a cdn */
   font-family: "Courier New", Courier, monospace;
-  font-size: 64px; /* px stands for pixels */
+  font-size: 70px; /* px stands for pixels */
   /* This is used to make the text light or bold its value goes from 100-900 */
   font-weight: 400;
   color: white;
@@ -58,10 +59,31 @@ assign differnt values for css properties accouring to screen size */
 
 @media only screen and (max-width: 1200px) {
   /*Tablets [601px -> 1200px]*/
+  h2 {
+    font-size: 60px;
+  }
+
+  .container {
+    background-color: rgb(190, 28, 28);
+  }
 }
 @media only screen and (max-width: 600px) {
   /*Big smartphones [426px -> 600px]*/
+  h2 {
+    font-size: 50px;
+  }
+
+  .container {
+    background-color: rgb(61, 148, 10);
+  }
 }
 @media only screen and (max-width: 425px) {
   /*Small smartphones [325px -> 425px]*/
+  h2 {
+    font-size: 30px;
+  }
+
+  .container {
+    background-color: rgb(6, 116, 189);
+  }
 }
