@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Selectors</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Title</h1> <!--element 1-->
+    <h2 id="subTitle" class="sub">Sub title</h2>
+    <p >Content</p>
+
+    <script>
+        var element1,element2,element3;
+        //selecting element 1 using its id
+        element1= document.getElementById("heading"); 
+        element1.innerHTML="Hello!This was selected using id" 
+
+
+        //selecting element 2 using its class
+        element2= document.getElementsByClassName("sub"); // variable element2 contains an array of elements with classname sub
+        element2[0].innerHTML="Selected using class"; /*Since we have only one element with that classname, 
+                                                       it will be the first and last element of the array*/
+
+        //selecting element 1 by its tag
+        element3=document.getElementsByTagName("p");
+        element3[0].innerHTML="Selected using tagname";
+
+    </script>
+    
+</body>
+</html>

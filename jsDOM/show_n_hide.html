@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Hide</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .toggleButton{
+            height:40px;
+            background-color: black;
+            color: white;
+        }
+        #text{
+        display: block;
+        }
+
+    </style>
+</head>
+<body>
+   <button class="toggleButton" onClick="handleClick()">CLICK TO SHOW OR HIDE THE TEXT</button> 
+   <h1 id="text">Time for a bit of hide and seek!</h1>
+
+   <script>
+       function handleClick(){
+           var element=document.getElementById('text');
+        
+           //If the element is hidden, we show it 
+           if(element.style.display==="none")
+           {
+               element.style.display="block";
+           }
+           //If the element is shown, we hide it 
+           else{
+               
+            element.style.display="none";
+           }
+       }
+   </script>
+</body>
+</html>
