@@ -1,3 +1,18 @@
+<!--HOVER-->
+
+<!--We say that we are hovering over an element when we mouse over it-->
+
+<!--Although javascript or html does not provide a direct event handler for hover such as onClick, it does give us the onmouseover and onmouseout event.
+    So yeah, we are good to go! 
+-->
+
+<!--The onmuseover event helps us fire a function when the mouse is over an element (Well, you would've guessed anyways)-->
+<!--Similarly, the onmouseout event helps us fire a function when the mouse moves out of an element-->
+
+<!--When both of these are implemented together, we get a hovering effect. W-->
+
+
+<!--Basic structure of the page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hover</title>
+        <!--CSS-->
     <style>
         body{
             height:100vh;
@@ -23,15 +39,21 @@
     </style>
 </head>
 <body>
+    <!--The element on which we will test the hover action-->
     <h1 id="demoText" class="hoverText" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()" > I WILL CHANGE COLOUR ON HOVER</h1>
     <script>
+        //This function is fired when the mouse moves over the element
         function handleMouseOver(){
             var element=document.getElementById("demoText");
+
+            //We change the color to blue
             element.style.color="blue";
         }
 
+        //This function is fired when the mouse moves out of the element
         function handleMouseOut(){
             var element=document.getElementById("demoText");
+            //We change the color back to black
             element.style.color="black";
         }
     </script>

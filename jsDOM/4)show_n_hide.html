@@ -1,3 +1,12 @@
+<!--SHOW AND HIDE-->
+<!--One of the many things we can do via javascript is hiding and showing the HTML elements
+    It requires as little work as this:
+        -> Selecting the element required using selectors
+        -> Toggling the css property "display" value between "none" and "block"
+    When the value of display is block, the element is shown, otherwise, when it is none, the element is hidden.
+-->
+
+<!--This is the basic HTML structure of our page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show and Hide</title>
+    <!--CSS to make the page look a teensy bit nicer-->
     <style>
         body{
             text-align: center;
@@ -21,10 +31,11 @@
     </style>
 </head>
 <body>
-   <button class="toggleButton" onClick="handleClick()">CLICK TO SHOW OR HIDE THE TEXT</button> 
-   <h1 id="text">Time for a bit of hide and seek!</h1>
+   <button class="toggleButton" onClick="handleClick()">CLICK TO SHOW OR HIDE THE TEXT</button> <!--Button to show or hide element-->
+   <h1 id="text">Time for a bit of hide and seek!</h1><!--The element-->
 
    <script>
+       //This function will be fired when the button is clicked
        function handleClick(){
            var element=document.getElementById('text');
         

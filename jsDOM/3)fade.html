@@ -1,0 +1,67 @@
+<!--Fade in-Fade out-->
+
+<!--We see stuff fading in and out in various websites all the time. Lets see how it's done.
+    Basically, we just change the value of opacity of the element from 0 to 1(for fade in) and from 1 to 0 (for fade out).
+    So,
+    -> We first select the element using selectors in javascript.
+    -> Change the value of opacity
+    -> We add the transition property like so:
+        .css_class_of_the_element{
+            transition: opacity 1s
+        }
+    to the css class of the element so that the transition of opacity from 0 to 1(or 1 to 0) doesn't happen abruptly.The transition happens
+    over a time interval of 1 second
+-->
+
+
+<!--This is the basic HTML structure of our page-->   
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade in-Fade out</title>
+    <!--The css for our page. Do note the transition property added to the element we are going to play with-->
+    <style>
+        body{
+            text-align: center;
+        }
+        
+        .fadeTextLine{
+            transition: opacity 1s;
+        }
+        .fadeInButton ,.fadeOutButton{
+            height:50px;
+            width:100px;
+            margin-top:100px;
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <button id="fadeIn" class="fadeInButton" onclick="handleFade(1)">FADE IN</button> <!--The button to make the element fade in-->
+    <button id="fadeOut" class="fadeOutButton" onclick="handleFade(0)">FADE OUT</button> <!--The button to make the element fade out-->
+    <h1 id="fadeText" class="fadeTextLine">The next time if you don't see me, I might have faded!</h1><!--The element we are talking about-->
+    <script>
+        /*
+            This function is fired when any of the buttons are clicked. 
+            It performs in different ways according to the argument passed
+            If the argument passed is 1,the element fades in
+            If the argument passed is zero, the element fades out
+        */
+        function handleFade(opacityValue){
+            var element=document.getElementById("fadeText");
+            if(opacityValue===1){
+                element.style.opacity=1;
+            }
+            else{
+                element.style.opacity=0;
+            }
+
+        }
+    </script>
+</body>
+</html>
