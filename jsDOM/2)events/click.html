@@ -1,0 +1,51 @@
+<!--EVENT HANDLING -->
+
+<!--Events are actions that take place in the browser that can either be started by the user or the browser itself. 
+    A user clicking a button, submitting a form, or pressing a key on their keyboard are all examples of events in action-->
+<!------------------------------------------------------------------------------------------------------------------------->
+ <!-- EVENT: CLICK-->
+
+<!--Now that we have rendered our buttons on screen, we would them to do some work when they are clicked. Buttons in websites
+lets you do various things. For eg: Send buttons send a message, back button takes to the previous page. 
+However, all of this happens only when you click them. So how does the webpage know when the button is clicked or what to do when its clicked? 
+-->
+
+<!--Clicking is an event and we have listeners which listen to the events and fire appropriate functions when an event takes place-->
+<!--When we click a button, the onclick event fires the function specified-->
+
+<!--In the below code, we will produce an alert when a button is clicked-->
+
+
+<!--This is the basic HTML structure of our page-->   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The onClick event</title>
+    <!--CSS-->
+    <style>
+        body{
+            height:100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clickButton{
+            height:50px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class ="clickButton" onClick="alert('Hello!')">CLICK ME TO GET AN ALERT</button>
+    <!--
+        Here, we have specified the alert("Hello") function to be fired on the onclick event.
+         One could also specify a separate function in javascript and do the same like so: onClick="function_name()"
+    -->
+    
+</body>
+</html>

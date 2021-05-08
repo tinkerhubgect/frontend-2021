@@ -1,0 +1,57 @@
+<!--The setInterval function-->
+
+<!--At times you might find yourself in a place where you need to execute a piece of code every 1 second, or 5 seconds or
+    any fixed interval of time for that matter. This is where setInterval function will come to your aid.-->
+
+<!--The JavaScript setInterval() method executes a specified function multiple times at set time intervals 
+        specified in milliseconds (1000ms = 1second)-->
+
+<!--The function takes in two arguments: The function to be executed and the time interval in milliseconds
+    Syntax: setInterval(function(){},time_interval_in_milliseconds);
+-->
+
+<!--Here we try to build a simple seconds timer with the help of this function-->
+
+<!--This is the basic HTML structure of our page-->   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The setInterval Function</title>
+    <!--CSS as always-->
+    <style>
+        body{
+            text-align: center;
+        }
+        .timerButton{
+            height:50px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="timerButton" onclick="startTimer()">GET, SET, GO..!!</button><!--Button to fire the function which starts a timer-->
+    <h1 id="counter"></h1>  <!--This is where the timer will run -->
+    <script>
+
+        //The function that will be fired when the button is clicked
+        function startTimer(){
+            var element=document.getElementById("counter");
+            var counter=1;
+            setInterval(function(){
+                /*This function will increase the value of the counter variable every time 
+                it executes and update the number rendered on the screen*/
+
+                element.innerHTML=counter; //Rendering the value of count variable on screen 
+
+                counter++;//Incrementing variable
+            }, 1000);//The time interval specified is 1 second
+        }
+
+    </script>
+</body>
+</html>

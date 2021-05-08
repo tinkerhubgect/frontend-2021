@@ -1,0 +1,51 @@
+<!--The setTimeout function-->
+
+<!--Time and again we might feel the need to execute a code ONCE after a fixed time interval. 
+    For eg: If you want to alert the users that they have been on a website for 20 minutes,
+     you will have to write the code for an alert which should be displayed AFTER 20 minutes automatically.
+    The setTimeout function will help you do that -->
+
+<!--The setTimeout function executes a function after a fixed time interval speified in milliseconds-->
+
+<!--Syntax : setTimeout(function(){},time_in_milliseconds); -->
+
+<!--This is the basic HTML structure of our page-->   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The setTimeout function</title>
+    <!--The CSS -->
+    <style>
+        body{
+            text-align: center;
+        }
+        .changeButton{
+            height:50px;
+            background-color: black;
+            color: white;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1 id="demoText">I WILL TURN RED 3 SECONDS AFTER YOU CLICK THE BUTTON</h1><!--Our element to be experimented on-->
+    <button class="changeButton" onclick="handleClick()" >CHANGE COLOUR OF TEXT</button><!--Button which fires the function that changes the element red after 3 seconds-->
+    <script>
+        function handleClick()
+       { 
+           //We aim at changing the colour of the text of the heading to red after 3 seconds
+           var element=document.getElementById("demoText");
+            
+            setTimeout(function(){
+                //This is the function which is executed once
+                element.style.color="red";
+            },3000);//This is the time interval aftr which the function is executed.
+
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!-- Hey there! So far we have rendered some elements using html, designed them using CSS and even learnt a bit of Javascript.
+So, let us now start manipulating the elements we rendered. -->
+
+<!-- The first step in this journey would inevitably be "selecting" the element to be manipulated. 
+    For this, we use something called the "selectors" in javascript -->
+
+<!--This is the basic HTML structure of our page-->    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Selectors</title>
+    <!--Some CSS to make our page look good-->
+    <style>
+                
+        body{
+            text-align: center;
+        }
+        .btn{
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin-right: 5px;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Title</h1><!--element1-->
+    <h2 id="subTitle" class="sub">Sub title</h2><!--element2-->
+    <p class="content">Content 1</p> <!--element3[0]-->  
+    <p class="content">Content 2</p> <!--element3[1]-->  
+    <div class="line">Line 1</div><!--element4[0]--> 
+    <div class="line">Line 2</div><!--element4[1]--> 
+   
+<button class="btn" onclick="idSelect()">Try getElementById</button>
+<button class="btn" onclick="classNameSelect()">Try getElementsByClassName</button>
+<button class="btn" onclick="tagNameSelect()">Try getElementsByTagName</button>
+<button class="btn" onclick="querySelect()">Try querySelector</button>
+<button class="btn" onclick="queryAllSelect()">Try querySelectorAll</button>
+
+
+    <script>
+        //Javascript code for accessing and manipulating the HTML elements
+        function idSelect()
+        {
+            var element1;
+            //selecting element1 using its id
+            element1= document.getElementById("heading"); 
+            element1.innerHTML="Hello! This was selected using id" ;
+        }
+
+        function classNameSelect()
+       { 
+            var element2;
+           //selecting element2 using its class
+            element2= document.getElementsByClassName("sub");  
+            /* variable element3 contains an array of elements with classname sub
+            getElementByClassName returns all elements with the given classname (here "sub").*/
+            element2[0].innerHTML="Selected using class";    
+             /*Since we have only one element with that classname, 
+            it will be the first and last element of the array*/
+        }
+
+        function tagNameSelect()
+        {
+            var element3;
+            //selecting elements element3[0],element3[1] by its tag
+            element3=document.getElementsByTagName("p");   
+            /* variable element3 contains an array of elements with tagname p
+             getElementByTagName returns all elements with the given tagname(here "p").*/
+            for(var i=0;i<element3.length;++i){
+                element3[i].innerHTML="Selected using tagname";
+            }
+        }
+
+        
+        function querySelect()
+        { 
+            var element4;
+            //selecting element4[0] using querySelector()
+            //querySelector() gets the first element in the document with class="line"
+            element4 = document.querySelector(".line");
+            element4.innerHTML="This is how querySelector() works";
+        }
+
+        function queryAllSelect()
+        {
+            var element5;
+            //selecting element4[0] using querySelector()
+            /*element5 is going to store an array since querySelectorAll() 
+                 returns an array of elements selected*/
+            element5=document.querySelectorAll(".line");
+            for(var i=0;i<element5.length;++i){
+                element5[i].innerHTML="And this is how querySelectorAll() works";
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
