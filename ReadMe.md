@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://gihub.com/tinkerhubgect">
-	<img src="./.github/images/thhub.png" alt="TINKERHUB GECT"/>
+	<img src="https://github.com/tinkerhubgect/template/raw/main/.github/images/thhub.png"/>
 </a>
 	<h2 align="center"> TINKERHUB GECT </h2>
 	<h4 align="center"> TinkerWeb Web Designing Bootcamp <h4>
