@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sample Program to demonstrate external scripting with javascript</h1>
+
+    <!-- You can place an external script reference in <head> or <body> as you like.
+    The script will behave as if it was located exactly where the <script> tag is located.        
+    Placing scripts at the bottom of the <body> element improves the display speed, because 
+    script interpretation slows down the display. -->
+
+    <script src="myScript.js"></script>
+
+    <!-- Note that for this implementation to take effect the script file should be in the 
+        same directory as of the HTML file. Otherwise the path should be changed accordingly -->
+</body>
+</html>

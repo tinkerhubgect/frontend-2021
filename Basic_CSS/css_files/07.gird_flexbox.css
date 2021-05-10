@@ -1,0 +1,84 @@
+.box1-g {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(103, 238, 121);
+
+  grid-area: b1;
+}
+.box2-g {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(97, 217, 233);
+
+  grid-area: b2;
+}
+.box3-g {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(212, 66, 164);
+
+  grid-area: b3;
+}
+.box4-g {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(230, 240, 100);
+
+  grid-area: b4;
+}
+
+.grid-layout {
+  /* Size the parent div to the half size of the window */
+  width: 100%;
+  height: 50vh;
+
+  /* Refer https://www.w3schools.com/css/css_grid.asp for detailed guide */
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  /* Adding a "." in a space creates an empty space  */
+  grid-template-areas:
+    "b1 b3 b3"
+    "b4 b4 b2";
+
+  justify-items: center;
+  align-items: center;
+}
+
+/* Flex */
+
+.box1-f {
+  height: 12.5vh;
+  width: 12.5vh;
+  background-color: rgb(103, 238, 121);
+}
+.box2-f {
+  height: 12.5vh;
+  width: 12.5vh;
+  background-color: rgb(97, 217, 233);
+}
+.box3-f {
+  height: 12.5vh;
+  width: 12.5vh;
+  background-color: rgb(212, 66, 164);
+}
+.box4-f {
+  height: 12.5vh;
+  width: 12.5vh;
+  background-color: rgb(230, 240, 100);
+}
+
+.flex-layout {
+  /* Size the parent div to the half size of the window */
+  width: 100%;
+  height: 50vh;
+
+  /* Refer https://www.w3schools.com/css/css3_flexbox.asp for detailed guide */
+  display: flex;
+
+  justify-content: space-around; /* start,  center, space-between, space-around, space-evenly */
+  align-items: center; /* flex-start, flex-end, center, baseline, stretch */
+
+  /* If you want your parent element to show its childern in column use this */
+  /* flex-direction: column;  "row, row-reverse, column, column-reverse" are the other values which you can apply*/
+}

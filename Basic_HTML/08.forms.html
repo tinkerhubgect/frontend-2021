@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+  		<meta charset="utf-8">
+ 	 	<title>forms and input tags</title>
+	</head>
+
+	<body>
+		
+        <!-- Let's create some forms using different kinds of input tags and some commonly used attributes -->
+        
+        <h2>Personal Details</h2>
+
+
+
+        <form method="GET" action="">
+          
+            <!-- METHOD and ACTION usually accompanies a form and will become more relevant once you start developing backends -->
+            <!-- ACTION gives the url to which the data is to sent on submission -->
+            <!-- METHOD specifies how data from the form has to be sent. Commonly used methods are GET and POST
+                 Try using "GET" and "POST" and see the difference on submission (Check address bar to see the difference)-->
+
+           
+            <!-- <input> is a form element used to get user input, 
+                and its type can be modified using the "type" attribute -->
+            <!-- "placeholder" attribute can be used to set a hint and
+                "value" can be used to set a default value of the input field -->
+            
+            <input type="text" placeholder="Name" >
+            <br>
+            <input type="text" value="GECT">
+            <br>
+            <input type="number" placeholder="Age">
+            
+            <br><br>
+        
+            <!-- This is how we can assign a label for an input tag. 
+                The "for" attribute of label has to match with the "id" of input -->
+            <!-- explore more input type's -->
+
+            <label for="name">Name : </label>
+            <input type="text" placeholder="Name" id="name" name="name">
+            <br>
+            <label for="college">College : </label>
+            <input type="text" value="GECT" id="college" name="college">
+            <br>
+            <label for="age">Age : </label>
+            <input type="number" placeholder="Age">
+            <br>
+            <label for="birthday">Birthday : </label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+            <br>
+            <label for="image">Image : </label>
+            <input type="file" id="image" name="image">
+            <br>
+                   
+
+            <!-- Labels if so used are associated with the input. Clicking on the label will also
+                trigger the input field. A simple text won't allow that. See how clicking on 
+                the label "age" doesnt trigger the input. In "Age" the "id" in input is missing -->
+            
+            
+            <br>
+                
+
+            <!-- "type=radio" helps us implement radio buttons in html. But there is a logical
+                issue with the below implementation. We will rectify this issue in the next form-->
+            
+            <div><strong>Gender</strong></div>
+            <label for="male">Male : </label>
+            <input type="radio" id="male">
+            <br>
+            <label for="female">Female : </label>
+            <input type="radio" id="female">
+            <br>
+            <label for="trans">Trans : </label>
+            <input type="radio" id="trans">
+            <br>
+            <label for="other">Prefer not to say : </label>
+            <input type="radio" id="other">
+            <br>
+        
+            <br>
+                   
+            <!-- "type=submit" gives us a button that submits the form to the url given in ACTION of 
+                the form using the speicifed METHOD. "Submit Query" is the default text, which can 
+                be changed using "value" attribute -->
+
+            
+            <input type="submit">
+                   
+        </form>
+
+
+                
+        <br/><br/><br/><br/><br/><br/><br/>
+
+       
+
+
+        <!-- Form 2 -->
+
+        <h2>Review</h2>
+
+
+        <form method="POST" action="">
+
+            <strong>Mentors :</strong>
+            <!-- disabled attribute makes the input unusable -->
+            <input type="text" value="Abil" name="mentor1" disabled >
+            <input type="text" value="Gokul" name="mentor2" disabled >
+            <!-- Disabled <input> elements in a form will not be submitted -->
+
+
+            <br><br><br>
+
+
+            <!-- Correct implementation for radio buttons.
+                Notice how all the logically related radio buttons have the same "name" attribute -->
+            <strong>Overall Workshop Experience :</strong> 
+            <br>   
+            <label for="wow1">Wow, Incredible </label>
+            <input type="radio" id="wow1" name="experience" value="Wow, Incredible" checked>
+            <br>
+            <label for="wow2">Couldn't be better </label>
+            <input type="radio" id="wow2" name="experience" value="Couldn't be better">
+            <br>
+            <label for="wow3">You guys are the best </label>
+            <input type="radio" id="wow3" name="experience" value="You guys are the best">
+             
+            <br><br><br>
+
+            <!-- Identify differences between radio and checkbox types -->
+            <strong>Positives Features :</strong>
+            <br>
+            <label for="positive1"> Interesting Workshop </label>
+            <input type="checkbox" id="positive1" value="Interesting Workshop" name="positive" checked>
+            <br>
+            <label for="positive2">  Understood Everything </label>
+            <input type="checkbox" id="positive2" value="Understood Everything" name="positive">
+            <br>
+            <label for="positive3"> Had loads of fun </label>
+            <input type="checkbox" id="positive3" value="Had loads of fun" name="positive">
+            
+            <br><br><br>
+
+            <!-- <select> along with <option> tag is used to create drop down menu's -->
+            
+            <label for="rating"><strong>Worshop Rating : </strong></label>
+            <select name="rating" id="rating">
+                <option value="10" >10/10</option>
+                <option value="11" >11/10</option>
+                <option value="12" >12/10</option>
+            </select>
+            
+
+            <!-- <input> elements of types like "radio", "checkbox" and <option> tags 
+                dont have text areas where input can be typed. On submission, the content of
+                their "value" attribute is passed. To view them, change form METHOD to "GET" and
+                check address bar -->
+
+            <br><br><br>
+
+            <!-- <textarea> is used to accept longer texts -->
+            <label for="review"> <strong>Review :</strong> </label>
+            <br>
+            <textarea name="review" id="review" cols="30" rows="7" placeholder="feel free"></textarea>
+
+            <br><br><br>
+
+            
+            <input type="submit" value="LETS GO" >
+            
+        </form>
+
+
+	</body>
+	
+</html>
+
+
+
+<!-- More Input types : https://www.w3schools.com/html/html_form_input_types.asp -->
+<!-- More Form Elements : https://www.w3schools.com/html/html_form_elements.asp -->
+<!-- MOre Input Attributes : https://www.w3schools.com/html/html_form_attributes.asp -->

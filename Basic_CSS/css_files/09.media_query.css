@@ -1,0 +1,89 @@
+/* Reusing CSS from pt.3 basic styling */
+
+/* Removing all default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* vh stands for vertical height 100vh = height of window thus making it a responcive layout */
+  height: 100vh;
+  /* % is assigning the value of that certain percent from parent element eg 10% of 50px is 5px */
+  width: 100%;
+
+  padding-top: 50px;
+  padding-left: 50px;
+
+  background-color: rgb(54, 53, 53);
+  transition: background-color 1s;
+}
+
+h2 {
+  /* You can import fonts by either downloading or by using a cdn */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 70px; /* px stands for pixels */
+  /* This is used to make the text light or bold its value goes from 100-900 */
+  font-weight: 400;
+  color: white;
+}
+
+.color-div {
+  background-color: rgba(195, 195, 233, 0.795);
+  height: 50vh;
+  /* vw stands for view width which works just like vh */
+  width: 50vw;
+
+  margin: 10px;
+  /* rem is a relative unit which takes the font size of the root element and multiply by a constant 
+          eg root font size is 24px then 2rem is 48px */
+  padding: 2rem;
+
+  border: 5px solid white;
+  border-radius: 2rem;
+}
+
+.color-div p {
+  font-size: 1.5rem;
+}
+
+.color-div:hover {
+  background-color: rgba(174, 174, 247, 0.795);
+}
+
+/* Medio query is used to make a website responcive by enabling us to 
+assign differnt values for css properties accouring to screen size */
+
+/* Refer https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  h2 {
+    font-size: 60px;
+  }
+
+  .container {
+    background-color: rgb(190, 28, 28);
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  h2 {
+    font-size: 50px;
+  }
+
+  .container {
+    background-color: rgb(61, 148, 10);
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  h2 {
+    font-size: 30px;
+  }
+
+  .container {
+    background-color: rgb(6, 116, 189);
+  }
+}

@@ -1,0 +1,22 @@
+/* We can import css files to a css files over the internet (via cdn) */
+/* Here 2 css files are imported for custom fonts. Check out fonts.google.com (Highly recommended) */
+
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+body {
+  text-align: center;
+  background-color: burlywood;
+}
+
+h1 {
+  color: cornflowerblue;
+  font-family: "Satisfy", cursive;
+  font-size: 60px;
+}
+
+h2 {
+  color: slategrey;
+  font-family: "Pangolin", cursive;
+  font-size: 30px;
+}
