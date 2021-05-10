@@ -1,0 +1,76 @@
+body {
+  background-color: darksalmon;
+}
+
+/* general styling for all divs */
+div {
+  height: 100px;
+  width: 100px;
+  margin-top: 60px;
+  margin-left: 60px;
+  border: black solid 2px;
+  background-color: cornflowerblue;
+}
+
+main {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border: black solid 2px;
+  background-color: cornflowerblue;
+}
+
+p {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border: black solid 2px;
+  background-color: hotpink;
+}
+
+/* styling for all mains inside div */
+/* div main {
+  background-color: brown;
+} */
+
+/* stying for all divs inside main */
+/* main div {
+  background-color: beige;
+} */
+
+/* styling all child mains inside div */
+/* div > main {
+  background-color: aquamarine;
+} */
+
+/* styling all child mains inside .div1 */
+/* .div1 > main {
+  background-color: cadetblue;
+} */
+
+/* styling adjacent sibling element of the same parent */
+/* main + p {
+  background-color: blue;
+} */
+
+/* styling all sibling elements of the same parent */
+/* main ~ p {
+  background-color: darkgoldenrod;
+} */
+
+/* styling for every main element that is the second child of its parent */
+/* main:nth-child(2) {
+  background-color: wheat;
+} */
+
+/* styling for every main element that is the third child of its parent */
+/* main:nth-child(3) {
+  background-color: aquamarine;
+} */
+
+/* styling for every main element that is the fourth child of its parent */
+/* main:nth-child(4) {
+  background-color: crimson;
+} */

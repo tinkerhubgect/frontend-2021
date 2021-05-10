@@ -1,4 +1,17 @@
-# TINKERHUB GECT
+<p align="center">
+<a href="https://gihub.com/tinkerhubgect">
+	<img src="./.github/images/thhub.png" alt="TINKERHUB GECT"/>
+</a>
+	<h2 align="center"> TINKERHUB GECT </h2>
+	<h4 align="center"> TinkerWeb Web Designing Bootcamp <h4>
+</p>
+
+---
+[![Discord Chat](https://img.shields.io/discord/760928671698649098.svg)](https://discord.gg/nrCmwwfZxb)
+
+
+
+
 
 ## Web Development Basics (Syllabus)
 
