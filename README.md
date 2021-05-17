@@ -7,9 +7,9 @@
 </p>
 
 ---
-[![Discord Chat](https://img.shields.io/discord/760928671698649098.svg)](https://discord.gg/nrCmwwfZxb)
-
-
+[![](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/nrCmwwfZxb)
+[![](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=H1D7imOm3KE&list=PLJaEdBUfehM1351YIku8uKJc6T0JWyfqt
+)
 
 
 
